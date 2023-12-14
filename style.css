@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 93vh;
+    background-image: url('./assets/img/IN-en-20231120-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    position: relative;
+}
+
+.main .box {
+    height: 93vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    background-color: black;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 50px;
+    padding: 20px;
+}
+
+nav img {
+    color: rgb(229, 9, 20);
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: calc(100% - 64px);
+    position: relative;
+    padding: 0 30px;
+    gap: 23px;
+
+}
+
+.hero> :first-child {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    text-align: center;
+}
+
+.hero :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.line {
+    height: 0.5rem;
+    background-color: rgb(35, 35, 35);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+
+}
+
+.bts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: rgba(35, 35, 35, 0.185);
+    color: white;
+    gap: 12px;
+
+}
+
+.btn-white {
+    padding: 0.3rem 2rem;
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    border-radius: 4px;
+    font-weight: 300;
+
+}
+
+.btn-red {
+    background-color: rgb(229, 9, 20);
+    padding: 0.5rem 2.2rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.main input {
+    padding: 1rem 9rem 1rem 2rem;
+    background-color: rgba(35, 35, 35, 0.178);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    border-radius: 4px;
+    font-weight: 800;
+    color: white;
+
+}
+
+.btn-red-sm {
+    background-color: rgb(229, 9, 20);
+    padding: 0.3rem 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 580px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.secImg video {
+    position: absolute;
+    top: 123px;
+    right: 46px;
+    width: 456px;
+}
+
+#saif {
+    top: 68px;
+    width: 369px;
+    right: 110px;
+
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+    font-size: 24px;
+}
+
+.faq h2 {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+    scale: 1.5;
+    justify-content: center;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: 1rem 0 1.5rem 9.5rem;
+    padding: 14px;
+}
+
+.faqbox {
+    display: flex;
+    padding: 28px;
+    max-width: 70vw;
+    margin: 8px auto;
+    background-color: #2d2d2d;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 1s easy-out;
+    flex-wrap: wrap;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    color: #b3b3b3;
+    flex-wrap: wrap;
+
+}
+
+.footer-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 76px;
+    row-gap: 13px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-item li {
+    text-align: left;
+  }
+.footer a {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.question {
+    padding: 34px 0;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.email h4 {
+    font-weight: 100;
+    font-size: large;
+    padding-top: 2.4rem;
+    padding-bottom: 1rem;
+}
+
+.email input {
+    padding: 1rem 9rem 1rem 2rem;
+    background-color: rgba(35, 35, 35, 0.178);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    border-radius: 4px;
+    font-weight: 800;
+    color: white;
+}
+
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px
+}
+
+.secbtn {
+    background-color: rgb(229, 9, 20);
+    padding: 0.7rem 2.2rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+@media only screen and (max-width: 1300px) {
+
+
+    .btn-white .btn-red-sm {
+        padding: 1px;
+    }
+    .main{
+        background-size: max(1499px, 91vw);
+    }
+
+    /* Hero section adjustments */
+    .hero {
+        font-size: 18px;
+        text-align: center;
+        height: calc(100% - 144px);
+    }
+
+    /* Input and button adjustments in the hero section */
+    .hero-buttons input,
+    .hero-buttons button {
+        margin-bottom: 10px;
+        padding: 10px 15px;
+    }
+
+    .hero-buttons button {
+        padding: 8px 25px;
+    }
+
+    .btn-white {
+        padding: 0.3rem 0.7rem;
+    }
+
+    .bts {
+        font-size: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 5.5625rem;
+        height: 1.5rem;
+
+    }
+
+    .hero> :first-child {
+        font-weight: bolder;
+        font-size: 30px;
+    }
+
+    .hero :nth-child(2) {
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .hero :nth-child(3) {
+        font-size: 15px;
+    }
+
+
+    section.first>div :nth-child(1) {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    section.first>div :nth-child(2) {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .secImg img {
+        width: 305px;
+
+    }
+
+    .secImg video {
+        width: 252px;
+        top: 89px;
+        right: 11px;
+    }
+
+    #saif {
+        width: 192px;
+        top: 59px;
+        right: 62px;
+    }
+
+    .sec {
+        flex-wrap: wrap;
+
+    }
+
+    .line {
+        margin-top: 20px;
+    }
+
+    .email h4 {
+        text-align: center;
+    }
+
+    .sec input,
+    .sec button {
+        margin-bottom: 10px;
+        padding: 12px 15px;
+    }
+
+    .faq {
+        font-size: medium
+    }
+
+    .faq h2 {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    footer {
+        margin: 0px;
+    }
+
+    .question {
+        font-size: 16px;
+        margin-bottom: 0.9rem;
+        min-width: 17rem
+    }
+    .footer-item{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        
+    }
+}
